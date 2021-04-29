@@ -10,43 +10,86 @@
 
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
 
+
+
+
+
 </head>
 
 <body>
- 
-      <div class="webcontainer">
-    <h1>VoltCoin</h1>
 
-    <table style="width:40%">
+    <div class="webcontainer">
+        <h1>VoltCoin</h1>
 
-        <tr>
-            <td>
-                <button id="btn1" class="button button2">Deposit</button>
+        <table style="width:40%">
 
-            </td>
-            <td> <input type="text" id="deposit"></td>
-        </tr>
+            <tr>
+                <td>
+                    <button id="btn1" class="button button2">Energy Produced</button>
 
-        <tr>
-            <td>
+                </td>
+                <td> <input type="number" id="produced"> kWh </td>
+            </tr>
 
-                <button id="btn2" class="button button2">Withdraw</button>
+            <tr>
+                <td>
 
-            </td>
-            <td> <input type="text" id="withdraw"></td>
-        </tr>
+                    <button id="btn2" class="button button2">Energy Consumed</button>
 
-    </table>
-</div>
+                </td>
+                <td> <input type="number" id="consumed"> kWh </td>
+            </tr>
+
+            <tr>
+                <td>
+
+                    <button id="btn3" onclick='calculate()' class="button button2">Net Energy</button>
+
+                </td>
+                <td> <p class="total" id="Net" style="color:white;">0</p></td>
+            </tr>
+
+            <tr>
+                <td>
+
+                    <button id="btn4" class="button button2">Pay/Recieve Volts</button>
+
+                </td>
+
+            </tr>
 
 
-      <div class="piechart"></div>
+        </table>
+    </div>
 
-            
-    
+    <script>
+        function calculate(){
+        var produce = document.getElementById("produced").value;
+        var consume = document.getElementById("consumed").value;
+            document.getElementById("Net").innerHTML = +produce - +consume;
+            console.log(net);
+        }
+    </script>
+
+
+    <div class="piechart"></div>
+
+
+    <div class="Solar">
+        Solar
+    </div>
+
+    <div class="Nuclear">
+        Nuclear
+    </div>
+
+    <div class="ElectricCompany">
+        Big Electric
+    </div>
 
 
 
-    <script src="bundle.js"></script>
+
+
 </body>
 </html>

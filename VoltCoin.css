@@ -1,28 +1,41 @@
 
-.webcontainer {
-    text-align: center;
-    width: 100%;
+html {
+    background: url(Tech.gif) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 
-
+.webcontainer {
+    text-align: left;
+    width: 100%;
+}
 
 
 body {
     color: orange;
     font-family: Verdana;
     font-size: 300%;
+    
+}
+
+
+
+h1{
+    margin-left:150px;
 }
 
 .piechart {
-    margin-top: 400px;
-    margin-left:300px;
+    margin-top: 100px;
+    margin-left:500px;
     display: block;
-    position: absolute;
+    position: fixed;
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    background-image: conic-gradient( pink 70deg, lightblue 0 235deg, orange 0);
+    background-image: conic-gradient( magenta 70deg, purple 0 235deg, blue 0);
 }
 
 body,
@@ -32,6 +45,40 @@ body,
     align-items: center;
 }
 
+
+.Solar{
+    color:white;
+    font-family:Verdana;
+    font-size:100%;
+    position:fixed;
+    bottom:290px;
+    padding-left:300px;
+}
+
+.Nuclear {
+    color: white;
+    font-family: Verdana;
+    font-size: 60%;
+    position: fixed;
+    bottom: 360px;
+    padding-left: 650px;
+}
+
+.ElectricCompany {
+    color: white;
+    font-family: Verdana;
+    font-size: 60%;
+    position: fixed;
+    bottom: 160px;
+    right: 270px;
+}
+
+
+.total {
+    color: white;
+    font-family: Verdana;
+    font-size: 60%;
+}
 
 .button {
     border: none;
@@ -45,11 +92,7 @@ body,
     cursor: pointer;
 }
 
-.button1 {
-    background-color: #4CAF50;
-}
-/*Green*/
 .button2 {
-    background-color: #008CBA;
+    background-color: orange;
 }
 /*Blue*/
